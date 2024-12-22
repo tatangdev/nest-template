@@ -12,56 +12,76 @@
 
 ## Description
 
-A NestJS template for building server-side applications, integrated with Prisma as the ORM for database operations.
+A NestJS template for building server-side applications, integrated with Prisma as the ORM for database operations. This project provides a robust structure for developing scalable applications with features like authentication, email verification, and media handling.
 
-## Project setup
+## Features
+
+- **NestJS Framework**: Utilizes the powerful NestJS framework for building server-side applications.
+- **Prisma ORM**: Integrated with Prisma for efficient database operations.
+- **Email Verification**: Sends verification emails upon user registration.
+- **Media Uploads**: Supports file uploads with validation.
+- **Swagger Documentation**: Automatically generates API documentation.
+- **Environment Configuration**: Uses dotenv for managing environment variables.
+
+## Project Setup
+
+To set up the project, follow these steps:
+
+1. Clone the repository: `bash
+git clone https://github.com/tatangdev/nestjs-api.git
+cd nestjs-api   `
+
+2. Install dependencies: `bash
+npm install   `
+
+3. Create a `.env` file in the root directory and set the `DATABASE_URL` to point to your database.
+
+## Compile and Run the Project
+
+To compile and run the project, use the following commands:
 
 ```bash
-$ npm install
+# Development mode
+npm run start
+
+# Watch mode
+npm run start:dev
+
+# Production mode
+npm run start:prod
 ```
 
-## Compile and run the project
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Prisma setup
+## Prisma Setup
 
 Make sure you have a `.env` file with the `DATABASE_URL` pointing to your database. Use the following commands to manage Prisma:
 
 ```bash
 # Generate Prisma Client
-$ npm run prisma:generate
+npm run prisma:generate
 
 # Run migrations in development
-$ npm run prisma:migrate
+npm run prisma:migrate
 
 # Deploy migrations in production
-$ npm run prisma:migrate:prod
+npm run prisma:migrate:prod
 
 # Open Prisma Studio
-$ npm run prisma:studio
+npm run prisma:studio
 ```
 
-## Run tests
+## Run Tests
+
+To run the tests, use the following commands:
 
 ```bash
-# unit tests
-$ npm run test
+# Unit tests
+npm run test
 
-# e2e tests
-$ npm run test:e2e
+# E2E tests
+npm run test:e2e
 
-# test coverage
-$ npm run test:cov
+# Test coverage
+npm run test:cov
 ```
 
 ## Deployment
@@ -77,7 +97,7 @@ When deploying your application, ensure it runs efficiently by following the [de
 - [NestJS Devtools](https://devtools.nestjs.com) for real-time visualization
 - [NestJS Enterprise Support](https://enterprise.nestjs.com)
 
-## Stay in touch
+## Stay in Touch
 
 - Author - [TatangDev](https://github.com/tatangdev)
 - Website - [NestJS](https://nestjs.com)
