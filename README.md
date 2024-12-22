@@ -27,12 +27,18 @@ A NestJS template for building server-side applications, integrated with Prisma 
 
 To set up the project, follow these steps:
 
-1. Clone the repository: `bash
-git clone https://github.com/tatangdev/nestjs-api.git
-cd nestjs-api   `
+1. Clone the repository:
 
-2. Install dependencies: `bash
-npm install   `
+```bash
+git clone https://github.com/tatangdev/nestjs-api.git
+cd nestjs-api
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
 
 3. Create a `.env` file in the root directory and set the `DATABASE_URL` to point to your database.
 

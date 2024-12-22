@@ -133,6 +133,9 @@ export class AuthService {
     if (!isPasswordValid)
       throw new BadRequestException('Invalid email or password');
 
+    if (!user.emailVerifiedAt)
+      throw new BadRequestException('Email not verified');
+
     const [accessToken, refreshToken] = await Promise.all([
       this.generateAccessToken(user),
       this.generateRefreshToken(user),
